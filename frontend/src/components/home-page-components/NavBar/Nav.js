@@ -1,6 +1,8 @@
 import React,{Component} from 'react'
 import './Nav.css'
 
+import uimeetLogo from '../../../assests/ui-meet_logo.png'
+import pixelUiMeetLogo from './../../../assests/pixel-ui-meet-medium.png'
 import {BsPersonFill,BsEnvelopeFill,BsFillAwardFill,BsBriefcaseFill,BsFillPieChartFill} from 'react-icons/bs'
 
 export default class NavBar extends Component{
@@ -17,10 +19,15 @@ export default class NavBar extends Component{
     
     render(){
         return(
-            <div className={'list'}>       
-                                <a 
-                                 
-                                className={'nav-links'} >
+            
+            <div >
+                <div className={'nav-bar-outer'}>
+                   <div className={'nav-bar-logo'}>
+                     <img src={uimeetLogo} width={200}/>          
+                   </div>
+                   <div className={'nav-bar-buttons'}>
+                   <a   
+                                 className={'nav-links'} >
                                   <a href={'#'}>
                                  <BsPersonFill className={this.state.activeClassName==='home' ? 'active-nav-icon nav-icon' : 'nav-icon'}/>   
                                   </a>
@@ -40,9 +47,8 @@ export default class NavBar extends Component{
                                </a>
                                <a
                                
-                              className={'nav-links'} >
+                               className={'nav-links'} >
                                    <a href={'#projects'}>
-
                                <BsBriefcaseFill href={'#'} className={this.state.activeClassName==='projects' ? 'active-nav-icon nav-icon' : 'nav-icon'}/>   
                                    </a>
                                <h6 className={'nav-text'}>
@@ -50,10 +56,8 @@ export default class NavBar extends Component{
                                  </h6>  
                               </a>
                               <a
-                              
-                             className={'nav-links'} >
+                              className={'nav-links'} >
                                   <a href={'#services'}>
-
                               <BsFillPieChartFill href={'#'} className={this.state.activeClassName==='services' ? 'active-nav-icon nav-icon' : 'nav-icon'}/>   
                                   </a>
                               <h6 className={'nav-text'}>
@@ -61,17 +65,17 @@ export default class NavBar extends Component{
                                  </h6>  
                              </a>
                              <a
-                             
-                            className={'nav-links'} >
+                             className={'nav-links'} >
                                  <a href={'#mail'}>
-
                              <BsEnvelopeFill href={'#'} className={this.state.activeClassName==='mail' ? 'active-nav-icon nav-icon' : 'nav-icon'}/>   
                                  </a>
                              <h6 className={'nav-text'}>
                                   Mail
                                  </h6> 
                             </a>
-                </div>   
+                   </div>
+                </div> 
+        </div>
         );
     }
 }
