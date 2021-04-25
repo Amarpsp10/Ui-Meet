@@ -1,0 +1,8 @@
+.intro-page {
+  height: 100vh;
+}
+.intro-text {
+  flex: 1;
+  margin-top: 40vh;
+  text-align: center;
+}
