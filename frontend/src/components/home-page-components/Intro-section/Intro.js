@@ -8,7 +8,7 @@ export default class intro extends Component{
     render(){
         return(
             <div className={'intro-page'}>
-               <h1 className={'intro-text'}>hi, this is intro section</h1>
+               <h1 className={'intro-text'}>Hi, this is the Intro Section added by Akhil Gupta <br></br></h1>
             </div>
         );
     };
