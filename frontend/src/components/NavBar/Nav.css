@@ -1,0 +1,55 @@
+.nav-bar-outer {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  height: 60px;
+  margin: auto;
+  background-color: rgb(7, 42, 56);
+  display: flex;
+  flex-direction: row;
+  /* border-radius: 30px;
+  background: linear-gradient(
+    0deg,
+    rgb(7, 42, 56) 0%,
+    rgb(7, 42, 56) 85%,
+    rgb(22, 138, 184) 90%,
+    rgb(7, 42, 56) 100%
+  ); */
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.nav-bar-logo {
+  margin-right: 110px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
+.nav-logo {
+  color: rgb(231, 231, 231);
+  font-family: "Train One", cursive;
+  font-size: 30px;
+  cursor: pointer;
+}
+.nav-bar-buttons {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  padding-inline: 20px;
+}
+.nav-bar-button {
+  cursor: pointer;
+  padding: 3px;
+  padding-inline: 8px;
+  color: white;
+  border: solid 1px white;
+  height: min-content;
+  margin-inline: 5px;
+  border-radius: 5px;
+}
+.nav-bar-button:hover {
+  color: rgb(7, 42, 56);
+  background-color: white;
+}
